@@ -1,5 +1,5 @@
 export class Two {
   constructor() {
-    console.log("johan");
+    console.log("johan242");
   }
 }

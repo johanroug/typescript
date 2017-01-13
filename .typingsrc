@@ -1,0 +1,4 @@
+{
+  "proxy" : "http://proxy-nord.sdc.dk:80",
+  "rejectUnauthorized": false
+}
