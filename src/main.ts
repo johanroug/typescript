@@ -1,9 +1,8 @@
 ///<reference path="../typings/modules/lodash/index.d.ts" />
+import * as _ from "lodash";
 import {Two} from "./two";
 
-import * as _ from "lodash";
-
-class Todo {
+export class Todo {
   todos: Array<string>;
 
   constructor() {
