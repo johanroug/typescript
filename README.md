@@ -1,3 +1,3 @@
 # typescript
-Run tcs -w
+Run http-server
 go to http://localhost:8080/

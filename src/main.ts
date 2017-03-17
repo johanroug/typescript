@@ -1,17 +1,15 @@
 ///<reference path="../typings/modules/lodash/index.d.ts" />
-import * as _ from "lodash";
 import {Two} from "./two";
 
-class Johan {
-  constructor() {
-    console.log("ho ho ho5");
+import * as _ from "lodash";
 
-  }
-  getUser() {
-    return [{name: "Leena"}]
+class Todo {
+  todos: Array<string>;
+
+  constructor() {
+    this.todos = ["køb ind", "luft hund"];
+    console.log(this.todos);
   }
 }
 
-new Johan();
-new Two();
-console.log(_.isArray(new Johan().getUser()));
+new Todo();
