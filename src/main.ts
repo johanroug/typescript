@@ -8,7 +8,7 @@ export class Todo {
   constructor() {
     this.todos = ["køb ind", "luft hund"];
     console.log(this.todos);
-    console.log("johan er sej")
+    console.log("johan er sej");
     console.log(_);
   }
 }

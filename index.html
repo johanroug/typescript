@@ -4,27 +4,9 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <script src="https://unpkg.com/systemjs@0.19.41/dist/system.js"></script>
+  <script src="system.config.js"></script>
 </head>
 <body>
-<script>
-  System.config({
-    paths: {
-      'npm:': 'node_modules/'
-    },
-    packages: {
-      "dist": {
-        "defaultExtension": "js",
-        "main": "main"
-      }
-    },
-    map: {
-      "lodash": "https://unpkg.com/lodash@4.17.4",
-      "jquery": "./node_modules/jquery/dist/jquery.min.js"
-    }
-  });
-
-  System.import("dist")
-</script>
 
 </body>
 </html>
