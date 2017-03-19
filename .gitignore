@@ -14,6 +14,7 @@ tmp/
 
 #javascript
 **/*.map
+**/*.log
 
 # Mac OSX Finder files.
 **/.DS_Store

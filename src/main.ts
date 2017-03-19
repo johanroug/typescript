@@ -1,5 +1,5 @@
-///<reference path="../typings/modules/lodash/index.d.ts" />
 import * as _ from "lodash";
+import 'jquery';
 import {Two} from "./two";
 
 export class Todo {
@@ -8,6 +8,8 @@ export class Todo {
   constructor() {
     this.todos = ["køb ind", "luft hund"];
     console.log(this.todos);
+    console.log("johan er sej")
+    console.log(_);
   }
 }
 

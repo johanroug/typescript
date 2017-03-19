@@ -4,12 +4,24 @@
   "description": "Run tcs -w go to http://localhost:8080/",
   "main": "index.js",
   "dependencies": {
-    "http-server": "^0.9.0",
     "typescript": "^2.1.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/jquery": "^2.0.41",
+    "@types/lodash": "^4.14.55",
+    "concurrently": "^3.4.0",
+    "jquery": "^3.2.0",
+    "lite-server": "^2.3.0",
+    "tsc": "^1.20150623.0",
+    "typescript": "^2.2.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "typings": "typings",
+    "postinstall": "typings install"
   },
   "repository": {
     "type": "git",
